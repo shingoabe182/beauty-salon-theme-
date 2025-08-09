@@ -18,6 +18,7 @@ body {
     color: #333;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden; /* 横スクロールバーを非表示 */
 }
 
 .container {
@@ -79,14 +80,14 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: url('https://via.placeholder.com/1920x800/ffdddd/ffffff?text=Your+Beautiful+Nails') no-repeat center center/cover; /* 仮の背景画像 */
+    background: url('images/hero-bg.jpg') no-repeat center center/cover; /* 仮の背景画像 */
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     text-align: center;
-    position: relative;
 }
 
 .hero-section::before {

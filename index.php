@@ -12,24 +12,24 @@
         <div class="hero-content">
             <h1><?php bloginfo( 'name' ); ?></h1>
             <p><?php bloginfo( 'description' ); ?></p>
-            <a href="#booking" class="button">ご予約はこちら</a>
+            <a href="#booking" class="button" data-aos="fade-up" data-aos-delay="500">ご予約はこちら</a>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section-padding">
+    <section id="services" class="section-padding" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title">サービス</h2>
             <div class="services-grid">
-                <div class="service-item">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="100">
                     <h3>ジェルネイル</h3>
                     <p>豊富なカラーとデザインで、あなただけの指先を演出します。</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="200">
                     <h3>スカルプチュア</h3>
                     <p>長さ出しや強度アップに。美しいフォルムを追求します。</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="300">
                     <h3>ネイルケア</h3>
                     <p>爪の健康を第一に考えた丁寧なケアで、美しい自爪へ。</p>
                 </div>
@@ -38,22 +38,22 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="section-padding bg-light">
+    <section id="gallery" class="section-padding bg-light" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title">デザインギャラリー</h2>
             <div class="gallery-grid">
-                <img src="https://via.placeholder.com/300x200?text=Nail+Art+1" alt="Nail Art 1">
-                <img src="https://via.placeholder.com/300x200?text=Nail+Art+2" alt="Nail Art 2">
-                <img src="https://via.placeholder.com/300x200?text=Nail+Art+3" alt="Nail Art 3">
-                <img src="https://via.placeholder.com/300x200?text=Nail+Art+4" alt="Nail Art 4">
-                <img src="https://via.placeholder.com/300x200?text=Nail+Art+5" alt="Nail Art 5">
-                <img src="https://via.placeholder.com/300x200?text=Nail+Art+6" alt="Nail Art 6">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/nail-art-1.jpg" alt="Nail Art 1" data-aos="zoom-in" data-aos-delay="100">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/nail-art-2.jpg" alt="Nail Art 2" data-aos="zoom-in" data-aos-delay="200">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/nail-art-3.jpg" alt="Nail Art 3" data-aos="zoom-in" data-aos-delay="300">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/nail-art-4.jpg" alt="Nail Art 4" data-aos="zoom-in" data-aos-delay="400">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/nail-art-5.jpg" alt="Nail Art 5" data-aos="zoom-in" data-aos-delay="500">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/nail-art-6.jpg" alt="Nail Art 6" data-aos="zoom-in" data-aos-delay="600">
             </div>
         </div>
     </section>
 
     <!-- Blog/News Section (using WordPress posts) -->
-    <section id="blog" class="section-padding">
+    <section id="blog" class="section-padding" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title">最新情報</h2>
             <div class="posts-list">
@@ -61,7 +61,7 @@
                 if ( have_posts() ) :
                     while ( have_posts() ) : the_post();
                         ?>
-                        <article class="post-item">
+                        <article class="post-item" data-aos="fade-up" data-aos-delay="100">
                             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                             <div class="post-meta">
                                 Posted on <?php the_time( 'F j, Y' ); ?> by <?php the_author(); ?>
@@ -79,7 +79,7 @@
     </section>
 
     <!-- Info Section -->
-    <section id="info" class="section-padding bg-light">
+    <section id="info" class="section-padding bg-light" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title">店舗情報</h2>
             <div class="info-content">
@@ -97,11 +97,11 @@
     </section>
 
     <!-- Booking Section -->
-    <section id="booking" class="section-padding">
+    <section id="booking" class="section-padding" data-aos="fade-up">
         <div class="container text-center">
             <h2 class="section-title">ご予約</h2>
             <p>お電話またはオンラインでご予約いただけます。</p>
-            <a href="[予約ページのURL]" class="button primary-button">オンライン予約はこちら</a>
+            <a href="[予約ページのURL]" class="button primary-button" data-aos="zoom-in" data-aos-delay="200">オンライン予約はこちら</a>
             <p>お電話でのご予約: [あなたのサロンの電話番号]</p>
         </div>
     </section>
